@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head></head>
+    <body>
+        <h1>Welcome in home page!</h1>
+            This is flask application
+
+
+
+       <form class="add-form" method="POST" action="{{ url_for('advert.add') }}">
+             <br> <input name="product_name" placeholder="Product name"/>
+             <br> <input name="product_price" placeholder="Price"/>
+             <br> <input name="product_quantity" placeholder="Quantity"/><br>
+             <button id="add" type="submit">Add</button>
+         </form>
+
+        {%for product in products_list%}
+            {{product}}
+        {%endfor%}
+    </body>
+</html>
