@@ -1,3 +1,7 @@
+import os
+from app import basedir
+
+
 class Config(object):
     DEBUG = False
     TESTING = False
